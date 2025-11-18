@@ -40,5 +40,5 @@ print(f"Cross-validated Accuracy:{scores.mean():.4f}+{scores.std():.4f}")
 #predict
 preds=model.predict(x_test)
 submission['Survived']=preds
-submission.to_csv('final1.csv',index=False)
+submission.to_csv('final.csv',index=False)
 submission.head()
